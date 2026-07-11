@@ -1,7 +1,20 @@
+import pyttsx3
+
+
+
 def add2():
+     engine=pyttsx3.init()
+     engine.say("Enter first number:")
+     engine.runAndWait()
      num1=int(input("Enter first number:"))
+     engine=pyttsx3.init()
+     engine.say("Enter second number:")
+     engine.runAndWait()
      num2=int(input('Enter second number:'))
      sum=num1+num2
+     engine=pyttsx3.init()
+     engine.say("Sum is:")
+     engine.runAndWait()
      print("Sum is:",sum)
 
 def add3():
@@ -117,3 +130,6 @@ def div5():
      num5=int(input('Enter fifth number:'))
      div=(num1/num2)/(num3/num4)/(num5)
      print("Division is:",div)
+
+     
+print(add2())
